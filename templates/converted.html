@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8" />
+    <title>Conversie finalizată</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+    <main class="container">
+        <section class="message-box">
+            <h1>Conversie reușită!</h1>
+            <p>Fișierul <strong>{{ original_name }}</strong> a fost convertit cu succes în PDF.</p>
+            <a href="{{ download_url }}" class="btn-download" download>Descarcă PDF-ul</a>
+            <a href="{{ url_for('index') }}" class="btn-back">Încarcă alt fișier</a>
+        </section>
+    </main>
+</body>
+</html>
